@@ -27,6 +27,7 @@ Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında LAB-1 ve LAB-2 öd
 - **Heading Hiyerarşisi:** Tek `<h1>`, bölümler `<h2>`, alt bölümler `<h3>`
 
 ## Lighthouse Puanı
+<img width="1200" height="1113" alt="image" src="https://github.com/user-attachments/assets/90eb4eb2-e5fb-432b-894c-b801562fa7ac" />
 
 | Kategori | Puan | Tarih |
 |----------|------|-------|
