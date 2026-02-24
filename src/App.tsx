@@ -3,7 +3,7 @@ import './App.css'
 function App() {
   return (
     <>
-      {/* Skip Link - Klavye kullanicilari icin */}
+      {/* Atlama Baglantisi - Klavye kullanicilari icin */}
       <a href="#main-content" className="skip-link">
         Ana icerige atla
       </a>
