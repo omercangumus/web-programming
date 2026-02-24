@@ -26,6 +26,15 @@ Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında LAB-1 ve LAB-2 öd
 - **İletişim Formu:** HTML5 doğrulama, `fieldset`/`legend`, `label`/`for-id`, `aria-describedby`
 - **Heading Hiyerarşisi:** Tek `<h1>`, bölümler `<h2>`, alt bölümler `<h3>`
 
+## Lighthouse Puanı
+
+| Kategori | Puan | Tarih |
+|----------|------|-------|
+| ♿ Erişilebilirlik (Accessibility) | **100 / 100** ✅ | 24 Şubat 2026 |
+| 🏆 En İyi Uygulamalar (Best Practices) | **100 / 100** ✅ | 24 Şubat 2026 |
+
+> **Not:** Lighthouse 13.0.1 — Chromium 145.0.0.0 ile test edilmiştir.
+
 ## Kurulum
 
 ```bash
