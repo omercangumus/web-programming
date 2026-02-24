@@ -1,30 +1,30 @@
-# Web Tasarimi ve Programlama — Kisisel Portfoy
+# Web Tasarımı ve Programlama — Kişisel Portföy
 
-## Hakkinda
+## Hakkında
 
-Bu proje, **Web Tasarimi ve Programlama** dersi kapsaminda LAB-1 ve LAB-2 odevleri olarak hazirlanmistir. Vite + React + TypeScript kullanilarak olusturulmus, semantik HTML5 ve erisilebirlirlik (a11y) standartlarina uygun bir kisisel portfoy sayfasidir.
+Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında LAB-1 ve LAB-2 ödevleri olarak hazırlanmıştır. Vite + React + TypeScript kullanılarak oluşturulmuş, semantik HTML5 ve erişilebilirlik (a11y) standartlarına uygun bir kişisel portföy sayfasıdır.
 
-## Gelistirici
+## Geliştirici
 
 - **Ad Soyad:** Ömer Can Gümüş
-- **Ogrenci No:** 245541008
-- **Bolum:** Yazilim Muhendisligi
-- **Universite:** Firat Universitesi
+- **Öğrenci No:** 245541008
+- **Bölüm:** Yazılım Mühendisliği
+- **Üniversite:** Fırat Üniversitesi
 
-## Kullanilan Teknolojiler
+## Kullanılan Teknolojiler
 
-- [Vite](https://vitejs.dev/) - Hizli gelistirme ortami
-- [React](https://react.dev/) - UI kutuphanesi
-- [TypeScript](https://www.typescriptlang.org/) - Tip guvenli JavaScript
+- [Vite](https://vitejs.dev/) - Hızlı geliştirme ortamı
+- [React](https://react.dev/) - UI kütüphanesi
+- [TypeScript](https://www.typescriptlang.org/) - Tip güvenli JavaScript
 - Semantik HTML5
-- CSS3 (Erisilebirlirlik odakli)
+- CSS3 (Erişilebilirlik odaklı)
 
-## Ozellikler (LAB-2)
+## Özellikler (LAB-2)
 
-- **Semantik Yapi:** `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
-- **Erisilebirlirlik:** Skip link, ARIA etiketleri, anlamli alt metinleri, focus yonetimi
-- **Iletisim Formu:** HTML5 dogrulama, `fieldset`/`legend`, `label`/`for-id`, `aria-describedby`
-- **Heading Hiyerarsisi:** Tek `<h1>`, bolumler `<h2>`, alt bolumler `<h3>`
+- **Semantik Yapı:** `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
+- **Erişilebilirlik:** Skip link, ARIA etiketleri, anlamlı alt metinleri, focus yönetimi
+- **İletişim Formu:** HTML5 doğrulama, `fieldset`/`legend`, `label`/`for-id`, `aria-describedby`
+- **Heading Hiyerarşisi:** Tek `<h1>`, bölümler `<h2>`, alt bölümler `<h3>`
 
 ## Kurulum
 
@@ -35,4 +35,4 @@ npm run dev
 
 ## Lisans
 
-Bu proje egitim amacli olusturulmustur.
+Bu proje eğitim amaçlı oluşturulmuştur.

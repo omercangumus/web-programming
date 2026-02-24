@@ -3,20 +3,20 @@ import './App.css'
 function App() {
   return (
     <>
-      {/* Atlama Baglantisi - Klavye kullanicilari icin */}
+      {/* Atlama Bağlantısı - Klavye kullanıcıları için */}
       <a href="#main-content" className="skip-link">
-        Ana icerige atla
+        Ana içeriğe atla
       </a>
 
       {/* ===== HEADER ===== */}
       <header className="site-header">
-        <h1>Ömer Can Gümüş — Kisisel Portföy</h1>
+        <h1>Ömer Can Gümüş — Kişisel Portföy</h1>
 
         <nav aria-label="Ana navigasyon">
           <ul className="nav-list">
-            <li><a href="#hakkimda">Hakkimda</a></li>
+            <li><a href="#hakkimda">Hakkımda</a></li>
             <li><a href="#projeler">Projelerim</a></li>
-            <li><a href="#iletisim">Iletisim</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
           </ul>
         </nav>
       </header>
@@ -24,23 +24,23 @@ function App() {
       {/* ===== MAIN ===== */}
       <main id="main-content">
 
-        {/* --- Hakkimda Section --- */}
+        {/* --- Hakkımda Bölümü --- */}
         <section id="hakkimda" aria-labelledby="hakkimda-heading">
-          <h2 id="hakkimda-heading">Hakkimda</h2>
+          <h2 id="hakkimda-heading">Hakkımda</h2>
 
           <figure className="profile-figure">
             <img
-              src="https://avatars.githubusercontent.com/u/omercangumus"
-              alt="Ömer Can Gümüş'ün profil fotografi"
+              src="/profile.jpg"
+              alt="Ömer Can Gümüş'ün profil fotoğrafı"
               width={160}
               height={160}
             />
-            <figcaption>Ömer Can Gümüş — Yazilim Muhendisligi Ogrencisi</figcaption>
+            <figcaption>Ömer Can Gümüş — Yazılım Mühendisliği Öğrencisi</figcaption>
           </figure>
 
           <p>
-            Firat Universitesi Yazilim Muhendisligi bolumunde ogrenim gormekteyim.
-            Web teknolojileri, bulut bilisim ve DevOps alanlarina ilgi duyuyorum.
+            Fırat Üniversitesi Yazılım Mühendisliği bölümünde öğrenim görmekteyim.
+            Web teknolojileri, bulut bilişim ve DevOps alanlarına ilgi duyuyorum.
           </p>
 
           <h3>Becerilerim</h3>
@@ -53,15 +53,15 @@ function App() {
           </ul>
         </section>
 
-        {/* --- Projelerim Section --- */}
+        {/* --- Projelerim Bölümü --- */}
         <section id="projeler" aria-labelledby="projeler-heading">
           <h2 id="projeler-heading">Projelerim</h2>
 
           <article className="project-card">
             <h3>Web Lab Hello</h3>
             <p>
-              Vite + React + TypeScript ile olusturulmus kisisel tanitim sayfasi.
-              LAB-1 kapsaminda gelistirilmistir.
+              Vite + React + TypeScript ile oluşturulmuş kişisel tanıtım sayfası.
+              LAB-1 kapsamında geliştirilmiştir.
             </p>
             <p><strong>Teknolojiler:</strong> React, TypeScript, Vite</p>
           </article>
@@ -69,20 +69,20 @@ function App() {
           <article className="project-card">
             <h3>Cloud Native Reliability Platform</h3>
             <p>
-              Bulut tabanli guvenilirlik platformu. Mikroservis mimarisi ve
-              konteyner teknolojileri kullanilarak gelistirilmistir.
+              Bulut tabanlı güvenilirlik platformu. Mikroservis mimarisi ve
+              konteyner teknolojileri kullanılarak geliştirilmiştir.
             </p>
             <p><strong>Teknolojiler:</strong> Docker, Terraform, AWS</p>
           </article>
         </section>
 
-        {/* --- Iletisim Section --- */}
+        {/* --- İletişim Bölümü --- */}
         <section id="iletisim" aria-labelledby="iletisim-heading">
-          <h2 id="iletisim-heading">Iletisim</h2>
+          <h2 id="iletisim-heading">İletişim</h2>
 
           <form action="#" method="POST" noValidate>
             <fieldset>
-              <legend>Iletisim Formu</legend>
+              <legend>İletişim Formu</legend>
 
               <div className="form-group">
                 <label htmlFor="name">Ad Soyad</label>
@@ -92,7 +92,7 @@ function App() {
                   name="name"
                   required
                   minLength={2}
-                  placeholder="Adinizi giriniz"
+                  placeholder="Adınızı giriniz"
                   aria-describedby="name-error"
                 />
                 <small id="name-error" className="error-msg" role="alert"></small>
@@ -105,7 +105,7 @@ function App() {
                   id="email"
                   name="email"
                   required
-                  placeholder="ornek@email.com"
+                  placeholder="örnek@email.com"
                   aria-describedby="email-error"
                 />
                 <small id="email-error" className="error-msg" role="alert"></small>
@@ -119,10 +119,10 @@ function App() {
                   required
                   aria-describedby="subject-error"
                 >
-                  <option value="">Seciniz...</option>
+                  <option value="">Seçiniz...</option>
                   <option value="genel">Genel</option>
-                  <option value="is-birfigi">Is Birligi</option>
-                  <option value="diger">Diger</option>
+                  <option value="is-birligi">İş Birliği</option>
+                  <option value="diger">Diğer</option>
                 </select>
                 <small id="subject-error" className="error-msg" role="alert"></small>
               </div>
@@ -135,13 +135,13 @@ function App() {
                   required
                   minLength={10}
                   rows={5}
-                  placeholder="Mesajinizi yaziniz..."
+                  placeholder="Mesajınızı yazınız..."
                   aria-describedby="message-error"
                 ></textarea>
                 <small id="message-error" className="error-msg" role="alert"></small>
               </div>
 
-              <button type="submit">Gonder</button>
+              <button type="submit">Gönder</button>
             </fieldset>
           </form>
         </section>
@@ -149,7 +149,7 @@ function App() {
 
       {/* ===== FOOTER ===== */}
       <footer className="site-footer">
-        <p>&copy; 2026 Ömer Can Gümüş — Firat Universitesi Yazilim Muhendisligi</p>
+        <p>&copy; 2026 Ömer Can Gümüş — Fırat Üniversitesi Yazılım Mühendisliği</p>
       </footer>
     </>
   )
