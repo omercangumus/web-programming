@@ -12,6 +12,7 @@ function App() {
       <header className="site-header">
         <h1>Ömer Can Gümüş — Kişisel Portföy</h1>
 
+        {/* NAV — Mobile-First: column → row (640px+) */}
         <nav aria-label="Ana navigasyon">
           <ul className="nav-list">
             <li><a href="#hakkimda">Hakkımda</a></li>
@@ -22,6 +23,7 @@ function App() {
       </header>
 
       {/* ===== MAIN ===== */}
+      {/* Masaüstü (1024px+): max-width: 1200px; margin: 0 auto — App.css'de tanımlı */}
       <main id="main-content">
 
         {/* --- Hakkımda Bölümü --- */}
@@ -44,12 +46,15 @@ function App() {
           </p>
 
           <h3>Becerilerim</h3>
+          {/* Flexbox + flex-wrap: beceri etiketleri yatayda hizalanır, sığmayınca alta geçer */}
           <ul className="skills-list">
             <li>HTML5 &amp; CSS3</li>
             <li>JavaScript / TypeScript</li>
             <li>React</li>
             <li>Git &amp; GitHub</li>
             <li>Docker &amp; DevOps</li>
+            <li>Node.js</li>
+            <li>PostgreSQL</li>
           </ul>
         </section>
 
@@ -57,23 +62,74 @@ function App() {
         <section id="projeler" aria-labelledby="projeler-heading">
           <h2 id="projeler-heading">Projelerim</h2>
 
-          <article className="project-card">
-            <h3>Web Lab Hello</h3>
-            <p>
-              Vite + React + TypeScript ile oluşturulmuş kişisel tanıtım sayfası.
-              LAB-1 kapsamında geliştirilmiştir.
-            </p>
-            <p><strong>Teknolojiler:</strong> React, TypeScript, Vite</p>
-          </article>
+          {/*
+            CSS Grid: repeat(auto-fit, minmax(280px, 1fr))
+            Medya sorgusu olmadan responsive! Içerik genişliğine göre
+            otomatik olarak 1, 2 veya 3 sütuna geçer.
+          */}
+          <div className="project-grid">
 
-          <article className="project-card">
-            <h3>Cloud Native Reliability Platform</h3>
-            <p>
-              Bulut tabanlı güvenilirlik platformu. Mikroservis mimarisi ve
-              konteyner teknolojileri kullanılarak geliştirilmiştir.
-            </p>
-            <p><strong>Teknolojiler:</strong> Docker, Terraform, AWS</p>
-          </article>
+            <article className="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80"
+                alt="Web Lab Hello projesi — kod editörü ekran görüntüsü"
+              />
+              <div className="project-card-body">
+                <h3>Web Lab Hello</h3>
+                <p>
+                  Vite + React + TypeScript ile oluşturulmuş kişisel tanıtım sayfası.
+                  LAB-1 kapsamında geliştirilmiş, semantik HTML5 ve erişilebilirlik
+                  standartlarına uygun olarak LAB-2'de genişletilmiştir.
+                </p>
+                <div className="project-tech">
+                  <span>React</span>
+                  <span>TypeScript</span>
+                  <span>Vite</span>
+                </div>
+              </div>
+            </article>
+
+            <article className="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1667986684700-4f92b564d06a?w=600&q=80"
+                alt="Cloud Native Reliability Platform — bulut altyapı diyagramı"
+              />
+              <div className="project-card-body">
+                <h3>Cloud Native Reliability Platform</h3>
+                <p>
+                  Bulut tabanlı güvenilirlik platformu. Mikroservis mimarisi ve
+                  konteyner teknolojileri kullanılarak geliştirilmiş, SRE prensipleri
+                  doğrultusunda yapılandırılmıştır.
+                </p>
+                <div className="project-tech">
+                  <span>Docker</span>
+                  <span>Terraform</span>
+                  <span>AWS</span>
+                </div>
+              </div>
+            </article>
+
+            <article className="project-card">
+              <img
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80"
+                alt="SiberMiras projesi — siber güvenlik teması"
+              />
+              <div className="project-card-body">
+                <h3>SiberMiras</h3>
+                <p>
+                  Siber güvenlik alanında farkındalık yaratmayı amaçlayan eğitim platformu.
+                  Kullanıcıların dijital miras ve güvenlik alışkanlıkları hakkında
+                  bilinçlenmesi için tasarlanmıştır.
+                </p>
+                <div className="project-tech">
+                  <span>Node.js</span>
+                  <span>PostgreSQL</span>
+                  <span>Security</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
         </section>
 
         {/* --- İletişim Bölümü --- */}
