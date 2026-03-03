@@ -39,6 +39,8 @@
     /* 32px */
     --space-2xl: 3rem;
     /* 48px */
+    --space-3xl: 4rem;
+    /* 64px */
 
     /* ── Border Radius ───────────────────────────────────── */
     --radius-sm: 6px;
@@ -71,6 +73,8 @@
     /* ~24-36px */
     --text-2xl: clamp(1.75rem, 1.25rem + 2.50vw, 2.75rem);
     /* ~28-44px */
+    --text-3xl: clamp(2rem, 1.20rem + 3.00vw, 3.50rem);
+    /* ~32-56px — h1 için */
 
     /* ── Geçişler ────────────────────────────────────────── */
     --transition-fast: 0.15s ease;
