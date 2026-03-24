@@ -1,103 +1,68 @@
-# Web Tasarımı ve Programlama — Kişisel Portföy
+# 🚀 Web Tasarımı ve Programlama — Kişisel Portföy
 
-## Hakkında
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında LAB-1, LAB-2 ve LAB-3 ödevleri olarak hazırlanmıştır. Vite + React + TypeScript kullanılarak oluşturulmuş, semantik HTML5, erişilebilirlik (a11y) standartlarına uygun ve tam responsive bir kişisel portföy sayfasıdır.
+## 📖 Hakkında
+Bu proje, **Web Tasarımı ve Programlama** dersi laboratuvar görevleri kapsamında modüler olarak geliştirilen, kişisel bir portföy ve proje yönetim arayüzüdür. Modern web teknolojileriyle, **strict typing**, üstün **UI/UX** pratikleri ve **State Management** kurallarına uyarak tasarlanmıştır.
 
-## Geliştirici
-
+## 👨‍💻 Geliştirici
 - **Ad Soyad:** Ömer Can Gümüş
 - **Öğrenci No:** 245541008
 - **Bölüm:** Yazılım Mühendisliği
 - **Üniversite:** Fırat Üniversitesi
 
-## Kullanılan Teknolojiler
+---
 
-- [Vite](https://vitejs.dev/) - Hızlı geliştirme ortamı
-- [React](https://react.dev/) - UI kütüphanesi
-- [TypeScript](https://www.typescriptlang.org/) - Tip güvenli JavaScript
-- Semantik HTML5
-- Modern CSS — Flexbox, CSS Grid, Custom Properties
+## ✨ Özellikler ve Modüller
 
-## Lab Geçmişi
+### 📌 LAB-5: TypeScript Temelleri ve Gelişmiş State Yönetimi (Güncel)
+Projenin son aşamasında asenkron veri akışı ve strict typing yetenekleri kazandırılmıştır.
+- **Tip Güvenliği:** Proje genelinde `any` tipi kullanımları sıfırlanmış, `interface` ve `type` ile güçlü modeller yazılmıştır.
+- **Mock Service & Fetch:** `projects.json` mock verisinden asenkron `fetchProjects` servisi aracılığıyla hata (`!response.ok`) denetimli veri çekimi yapılmıştır.
+- **Derived State & Pure Functions:** Veriler orijinal diziyi bozmadan (immutability) pure fonksiyonlarla frontend tarafında aranabilir ve sırlanabilir hale getirilmiştir.
+- **Reaktif UI:** Hiçbir DOM manipülasyonu olmadan tüm akış React Hook'ları (`useState`, `useEffect`) ile yönetilmiştir.
 
-| Lab | Branch | Konu |
-|-----|--------|------|
-| LAB-1 | `main` | Vite + React + TypeScript proje kurulumu |
-| LAB-2 | `feature/semantic-html` | Semantik HTML5, erişilebilirlik (a11y), form temelleri |
-| LAB-3 | `feature/responsive-layout` | Modern CSS, Responsive Layout (Flex/Grid), Tasarım Sistemi |
-| LAB-4 | `feature/tailwind-ui-kit` | Tailwind CSS v4, Utility-First Component Mimarisi, Dark Mode |
-| LAB-5 | `feature/typescript-projects` | TypeScript, React State (useState, useEffect), Fetch API |
+### 🎨 LAB-4: Tailwind CSS & UI Component Mimarisi
+Eski geleneksel CSS sistemleri kaldırılarak Tailwind CSS v4'e göç edilmiş, `Button`, `Input`, `Card`, `Alert` gibi tekrar kullanılabilir (reusable) UI bileşenleri yazılmış ve özel bir `/UIKit` ekranı kurulmuştur. (Karanlık/Aydınlık mod dahil)
 
-## Özellikler
+### 📏 LAB-3 & LAB-2: Responsive Layout, Semantik HTML ve Erişilebilirlik
+HTML5 semantik etiketleri ile inşa edilen proje, `clamp()` fluid tipografi, CSS Grid ve Flexbox ile tasarlanmış olup 3 farklı breakpoint (Mobil, Tablet, Masaüstü) için kusursuz responsive akış sunar. Erişilebilirlik puanı %100'dür.
 
-### LAB-5 — JavaScript/TypeScript Temelleri ve State Yönetimi
-- **Kullanılan Teknolojiler:** React, TypeScript, Tailwind CSS, Fetch API
-- **Strict Typing:** Proje genelinde `any` tipi kullanımı tamamen kaldırılarak tam tip güvenliği (strict typing) sağlanmıştır.
-- **State Yönetimi:** Tüm DOM manipülasyonları terk edilmiş, bunun yerine React Hook'ları (`useState`, `useEffect`) ile veri akışı ve arayüz güncellemeleri yapılmıştır.
-- **Mock Service:** `fetchProjects()` servisi kurularak asenkron veri çekme simüle edilmiş ve HTTP hata kontrolleri (`!response.ok`) try/catch bloklarıyla yönetilmiştir.
-- **Pure Functions:** Orijinal dizileri muhafaza eden (mutasyona uğratmayan) ve filtrelenmiş türetilmiş durum (derived state) döndüren pure fonksiyonlar kullanılmıştır.
+---
 
-### LAB-4 — Tailwind CSS & UI Component Yaklaşımı
-- **Tailwind v4:** Eski CSS dosyaları (`App.css`, `tokens.css`) tamamen kaldırılarak yerine Tailwind CSS v4 entegre edilmiştir.
-- **Component Mimarisi:** Utility-class karmaşasını önlemek adına `Button`, `Input`, `Card`, `Alert` gibi React bileşenleri üretilmiştir.
-- **Dark Mode:** `@custom-variant dark` ve `document.documentElement.classList.toggle('dark')` kullanılarak temalar arası manuel geçiş sistemi kurulmuştur (Ay / Güneş butonu).
-- **UI Kit Sayfası:** Oluşturulan bileşenlerin 8'den fazla farklı varyantını sergileyen özel `/UIKit` sayfası hazırlanmıştır.
-- **Kesintisiz Geçiş:** Önceki ödevlerde yazılan flex ve grid sistemleri Tailwind utility sınıflarına (`flex-col`, `grid-cols-2`, vb.) dönüştürülmüş ve responsive tasarım (sm, md, lg) başarıyla korunmuştur.
+## 📸 Ekran Görüntüleri
 
-### LAB-2 — Semantik HTML & Erişilebilirlik
-- **Semantik Yapı:** `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`
-- **Erişilebilirlik:** Skip link, ARIA etiketleri, anlamlı alt metinleri, focus yönetimi
-- **İletişim Formu:** HTML5 doğrulama, `fieldset`/`legend`, `label`/`for-id`, `aria-describedby`
-- **Heading Hiyerarşisi:** Tek `<h1>`, bölümler `<h2>`, alt bölümler `<h3>`
+### ⏳ Yükleniyor Durumu (Loading State)
+Asenkron işlemler sırasında kullanıcıya gösterilen bekleme arayüzü.
 
-### LAB-3 — Modern CSS & Responsive Layout
-- **Design Tokens:** `src/styles/tokens.css` — renk, spacing, radius, gölge, font değişkenleri *(LAB-4 ile index.css @theme bloğuna taşındı)*
-- **Fluid Typography:** `clamp(min, rem + vw, max)` ile medya sorgusu gerektirmeyen akıcı font boyutları
-- **Flexbox Nav:** Mobile-First — `flex-direction: column` (mobil) → `row` (640px+), `gap` tabanlı boşluklar
-- **CSS Grid:** `repeat(auto-fit, minmax(280px, 1fr))` ile medya sorgusu olmadan responsive kart düzeni
-- **`object-fit: cover`:** Proje görselleri 16:9 oranında çerçevelenmiş
-- **3 Breakpoint:** Mobil (0–639px) · Tablet (640px+) · Masaüstü (1024px+, `max-width: 1200px`)
-- **CSS Kararları:** `CSS-KARARLARI.md` dosyasında tasarım kararları belgelenmiştir
-
-## Lighthouse Puanı (LAB-2)
-
-| Kategori | Puan | Tarih |
-|----------|------|-------|
-| ♿ Erişilebilirlik (Accessibility) | **100 / 100** ✅ | 24 Şubat 2026 |
-| 🏆 En İyi Uygulamalar (Best Practices) | **100 / 100** ✅ | 24 Şubat 2026 |
-
-> **Not:** Lighthouse 13.0.1 — Chromium 145.0.0.0 ile test edilmiştir.
-
-## Ekran Görüntüleri (LAB-3 & LAB-4)
-
-| Görünüm | Ekran |
-|---------|---------|
-| 📱 Mobil | 375px |
-| 📟 Tablet | 768px |
-| 🖥️ Masaüstü | 1280px |
-| 🎨 UI Kit | Dark & Light Mode |
-
-Görüntüler `screenshots/` klasöründe mevcuttur (Örn: `lab4-uikit-light.png`, `lab4-portfolio.png`).
-
-### LAB-5 Ekran Görüntüleri
-
-#### Yükleniyor Durumu (Loading State)
 ![Loading State](./screenshots/lab5-loading-state.png)
 
-#### Filtrelenmiş Durum (Filtered State)
+### 🔍 Filtreleme ve Arama (Filtered State)
+Canlı çalışan React State bazlı arama ve teknoloji kategorizasyonu.
+
 ![Filtered State](./screenshots/lab5-filtered-state.png)
 
-#### Hata Durumu (Error State)
+### 🚨 Hata Yönetimi (Error State)
+Fetch sırasında oluşabilecek ağ ve sunucu problemlerinde Alert component'inin devreye girmesi.
+
 ![Error State](./screenshots/lab5-error-state.png)
 
-## Kurulum
+---
+
+## 🛠️ Kurulum ve Çalıştırma
+
+Projeyi yerel bilgisayarınızda çalıştırmak için:
 
 ```bash
+# Bağımlılıkları yükleyin
 npm install
+
+# Geliştirme sunucusunu başlatın
 npm run dev
 ```
 
-## Lisans
-
+## 📜 Lisans
 Bu proje eğitim amaçlı oluşturulmuştur.
