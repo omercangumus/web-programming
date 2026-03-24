@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Modern E-Commerce",
+    "description": "A fully functional e-commerce platform with a custom shopping cart and payment gateway.",
+    "tech": ["React", "TypeScript", "Node.js", "MongoDB"],
+    "year": 2023,
+    "category": "fullstack",
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1557821552-17105176677c?w=500&q=80"
+  },
+  {
+    "id": 2,
+    "title": "Corporate Dashboard",
+    "description": "An interactive admin panel displaying various business metrics via responsive charts.",
+    "tech": ["React", "JavaScript", "Tailwind CSS"],
+    "year": 2022,
+    "category": "frontend",
+    "featured": false,
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80"
+  },
+  {
+    "id": 3,
+    "title": "Microservices API",
+    "description": "A high-performance backend architecture supporting distributed services.",
+    "tech": ["Go", "Docker", "PostgreSQL", "Redis"],
+    "year": 2024,
+    "category": "backend",
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1623282033815-40b05d96c903?w=500&q=80"
+  },
+  {
+    "id": 4,
+    "title": "Designer Portfolio",
+    "description": "A minimalist, responsive portfolio website highlighting UX/UI case studies.",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "year": 2021,
+    "category": "frontend",
+    "featured": false,
+    "image": "https://images.unsplash.com/photo-1507238692062-5a042e9719ce?w=500&q=80"
+  },
+  {
+    "id": 5,
+    "title": "Task Management App",
+    "description": "A kanban-style project management application prioritizing real-time collaboration.",
+    "tech": ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
+    "year": 2024,
+    "category": "fullstack",
+    "featured": true,
+    "image": "https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?w=500&q=80"
+  }
+]
