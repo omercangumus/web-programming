@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
 import Card from "./components/Card";
 import Input from "./components/Input";
-import { Project, Category, SortField, SortOrder } from "./types/project";
+import type { Project, Category, SortField, SortOrder } from "./types/project";
 import { fetchProjects } from "./services/projectService";
 import { applyFilters } from "./utils/projectHelpers";
 
@@ -23,8 +23,12 @@ function App() {
         const data = await fetchProjects();
         setProjects(data);
         setError(null);
-      } catch (err: any) {
-        setError(err.message || "Projeler yüklenirken bir hata oluştu.");
+      } catch (err: unknown) {
+        if (err instanceof Error) {
+            setError(err.message);
+        } else {
+            setError("Projeler yüklenirken bir hata oluştu.");
+        }
       } finally {
         setLoading(false);
       }

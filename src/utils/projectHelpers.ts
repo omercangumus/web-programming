@@ -1,4 +1,4 @@
-import { Project, Category, SortField, SortOrder, FilterState } from "../types/project";
+import type { Project, Category, SortField, SortOrder, FilterState } from "../types/project";
 
 export function filterBySearch(projects: Project[], query: string): Project[] {
   if (!query) return projects;
