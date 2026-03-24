@@ -27,8 +27,16 @@ Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında LAB-1, LAB-2 ve LA
 | LAB-2 | `feature/semantic-html` | Semantik HTML5, erişilebilirlik (a11y), form temelleri |
 | LAB-3 | `feature/responsive-layout` | Modern CSS, Responsive Layout (Flex/Grid), Tasarım Sistemi |
 | LAB-4 | `feature/tailwind-ui-kit` | Tailwind CSS v4, Utility-First Component Mimarisi, Dark Mode |
+| LAB-5 | `feature/typescript-projects` | TypeScript, React State (useState, useEffect), Fetch API |
 
 ## Özellikler
+
+### LAB-5 — JavaScript/TypeScript Temelleri ve State Yönetimi
+- **Kullanılan Teknolojiler:** React, TypeScript, Tailwind CSS, Fetch API
+- **Strict Typing:** Proje genelinde `any` tipi kullanımı tamamen kaldırılarak tam tip güvenliği (strict typing) sağlanmıştır.
+- **State Yönetimi:** Tüm DOM manipülasyonları terk edilmiş, bunun yerine React Hook'ları (`useState`, `useEffect`) ile veri akışı ve arayüz güncellemeleri yapılmıştır.
+- **Mock Service:** `fetchProjects()` servisi kurularak asenkron veri çekme simüle edilmiş ve HTTP hata kontrolleri (`!response.ok`) try/catch bloklarıyla yönetilmiştir.
+- **Pure Functions:** Orijinal dizileri muhafaza eden (mutasyona uğratmayan) ve filtrelenmiş türetilmiş durum (derived state) döndüren pure fonksiyonlar kullanılmıştır.
 
 ### LAB-4 — Tailwind CSS & UI Component Yaklaşımı
 - **Tailwind v4:** Eski CSS dosyaları (`App.css`, `tokens.css`) tamamen kaldırılarak yerine Tailwind CSS v4 entegre edilmiştir.
@@ -71,6 +79,17 @@ Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında LAB-1, LAB-2 ve LA
 | 🎨 UI Kit | Dark & Light Mode |
 
 Görüntüler `screenshots/` klasöründe mevcuttur (Örn: `lab4-uikit-light.png`, `lab4-portfolio.png`).
+
+### LAB-5 Ekran Görüntüleri
+
+#### Yükleniyor Durumu (Loading State)
+![Loading State](./screenshots/lab5-loading-state.png)
+
+#### Filtrelenmiş Durum (Filtered State)
+![Filtered State](./screenshots/lab5-filtered-state.png)
+
+#### Hata Durumu (Error State)
+![Error State](./screenshots/lab5-error-state.png)
 
 ## Kurulum
 
