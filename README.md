@@ -61,16 +61,16 @@ Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında LAB-1, LAB-2 ve LA
 
 > **Not:** Lighthouse 13.0.1 — Chromium 145.0.0.0 ile test edilmiştir.
 
-## Ekran Görüntüleri (LAB-3 & LAB-4)
+Görüntüler `screenshots/` klasöründe mevcuttur.
 
-| Görünüm | Ekran |
-|---------|---------|
-| 📱 Mobil | 375px |
-| 📟 Tablet | 768px |
-| 🖥️ Masaüstü | 1280px |
-| 🎨 UI Kit | Dark & Light Mode |
+### LAB-4 Ekran Görüntüleri
 
-Görüntüler `screenshots/` klasöründe mevcuttur (Örn: `lab4-uikit-light.png`, `lab4-portfolio.png`).
+#### Portföy Görünümü
+![Portfolio](./screenshots/lab4-portfolio.png)
+
+#### UI Kit (Aydınlık Mod)
+![UI Kit Light](./screenshots/lab4-uikit-light.png)
+
 
 ## Kurulum
 
