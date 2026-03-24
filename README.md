@@ -53,15 +53,19 @@ Bu proje, **Web Tasarımı ve Programlama** dersi kapsamında LAB-1, LAB-2 ve LA
 
 > **Not:** Lighthouse 13.0.1 — Chromium 145.0.0.0 ile test edilmiştir.
 
-## Ekran Görüntüleri (LAB-3)
-
-| Görünüm | Genişlik |
-|---------|---------|
-| 📱 Mobil | 375px |
-| 📟 Tablet | 768px |
-| 🖥️ Masaüstü | 1280px |
-
 Görüntüler `screenshots/` klasöründe mevcuttur.
+
+### LAB-3 Ekran Görüntüleri
+
+#### Masaüstü Görünümü (1280px)
+![Desktop](./screenshots/desktop-1280px.png)
+
+#### Tablet Görünümü (768px)
+![Tablet](./screenshots/tablet-768px.png)
+
+#### Mobil Görünüm (375px)
+![Mobile](./screenshots/mobile-375px.png)
+
 
 ## Kurulum
 
