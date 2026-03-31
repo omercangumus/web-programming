@@ -1,52 +1,54 @@
-[
-  {
-    "id": 1,
-    "title": "Modern E-Commerce",
-    "description": "A fully functional e-commerce platform with a custom shopping cart and payment gateway.",
-    "tech": ["React", "TypeScript", "Node.js", "MongoDB"],
-    "year": 2023,
-    "category": "fullstack",
-    "featured": true,
-    "image": "https://images.unsplash.com/photo-1557821552-17105176677c?w=500&q=80"
-  },
-  {
-    "id": 2,
-    "title": "Corporate Dashboard",
-    "description": "An interactive admin panel displaying various business metrics via responsive charts.",
-    "tech": ["React", "JavaScript", "Tailwind CSS"],
-    "year": 2022,
-    "category": "frontend",
-    "featured": false,
-    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&q=80"
-  },
-  {
-    "id": 3,
-    "title": "Microservices API",
-    "description": "A high-performance backend architecture supporting distributed services.",
-    "tech": ["Go", "Docker", "PostgreSQL", "Redis"],
-    "year": 2024,
-    "category": "backend",
-    "featured": true,
-    "image": "https://images.unsplash.com/photo-1623282033815-40b05d96c903?w=500&q=80"
-  },
-  {
-    "id": 4,
-    "title": "Designer Portfolio",
-    "description": "A minimalist, responsive portfolio website highlighting UX/UI case studies.",
-    "tech": ["HTML", "CSS", "JavaScript"],
-    "year": 2021,
-    "category": "frontend",
-    "featured": false,
-    "image": "https://images.unsplash.com/photo-1507238692062-5a042e9719ce?w=500&q=80"
-  },
-  {
-    "id": 5,
-    "title": "Task Management App",
-    "description": "A kanban-style project management application prioritizing real-time collaboration.",
-    "tech": ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-    "year": 2024,
-    "category": "fullstack",
-    "featured": true,
-    "image": "https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?w=500&q=80"
-  }
-]
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "SiberMiras",
+      "description": "Kültürel miras eserlerini siber saldırılara ve veri kayıplarına karşı korumak için tasarlanmış blockchain tabanlı güvenli arşiv sistemi.",
+      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800",
+      "tech": ["React", "TypeScript", "Solidity", "Tailwind CSS"],
+      "category": "Siber Güvenlik",
+      "date": "2024-01-15",
+      "demoUrl": "https://example.com/sibermiras"
+    },
+    {
+      "id": "2",
+      "title": "Star-Ops",
+      "description": "DevOps süreçlerini haritalandıran, bulut altyapınızı galaktik bir harita gibi görselleştirip yönetmenizi sağlayan AIOps aracı.",
+      "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800",
+      "tech": ["Next.js", "Docker", "AWS", "Python"],
+      "category": "DevOps",
+      "date": "2023-11-20",
+      "sourceUrl": "https://github.com/example/star-ops"
+    },
+    {
+      "id": "3",
+      "title": "NovaBank",
+      "description": "Yapay zeka asistanı ile desteklenen, yeni nesil mobil bankacılık deneyimi sunan hibrit finans uygulaması.",
+      "image": "https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?auto=format&fit=crop&q=80&w=800",
+      "tech": ["React Native", "Node.js", "MongoDB", "AI"],
+      "category": "Mobil",
+      "date": "2023-09-10",
+      "demoUrl": "https://example.com/novabank",
+      "sourceUrl": "https://github.com/example/novabank"
+    },
+    {
+      "id": "4",
+      "title": "CloudCostGuard",
+      "description": "Bulut maliyetlerinizi analiz eden, israfları anında tespit edip tasarruf önerileri getiren makine öğrenmesi destekli platform.",
+      "image": "https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&q=80&w=800",
+      "tech": ["Vue.js", "Python", "TensorFlow", "AWS"],
+      "category": "AI",
+      "date": "2024-02-05"
+    },
+    {
+      "id": "5",
+      "title": "WebLab Platform",
+      "description": "Öğrenciler ve eğitmenler için etkileşimli laboratuvar ortamı sağlayan tam donanımlı web uygulaması.",
+      "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800",
+      "tech": ["React", "TypeScript", "Tailwind CSS"],
+      "category": "Web",
+      "date": "2024-03-30",
+      "demoUrl": "https://example.com/weblab"
+    }
+  ]
+}
