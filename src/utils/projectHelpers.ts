@@ -1,45 +1,38 @@
-import type { Project, Category, SortField, SortOrder, FilterState } from "../types/project";
+import type { Project, Category, SortField, SortOrder, FilterState } from '../types/project';
 
-export function filterBySearch(projects: Project[], query: string): Project[] {
-  if (!query) return projects;
-  const lowerQuery = query.toLowerCase();
-  
-  return projects.filter(project => {
-    return (
-      project.title.toLowerCase().includes(lowerQuery) ||
-      project.description.toLowerCase().includes(lowerQuery) ||
-      project.tech.some(t => t.toLowerCase().includes(lowerQuery))
-    );
-  });
-}
+export const filterBySearch = (projects: Project[], search: string): Project[] => {
+  if (!search.trim()) return projects;
+  const lowerSearch = search.toLowerCase();
+  return projects.filter(
+    (project: Project) =>
+      project.title.toLowerCase().includes(lowerSearch) ||
+      project.description.toLowerCase().includes(lowerSearch) ||
+      project.tech.some((t: string) => t.toLowerCase().includes(lowerSearch))
+  );
+};
 
-export function filterByCategory(projects: Project[], category: Category | "all"): Project[] {
-  if (category === "all") return projects;
-  return projects.filter(project => project.category === category);
-}
+export const filterByCategory = (projects: Project[], category: Category): Project[] => {
+  if (category === 'Tümü') return projects;
+  return projects.filter((project: Project) => project.category === category);
+};
 
-export function sortProjects(projects: Project[], field: SortField, order: SortOrder): Project[] {
-  const sorted = [...projects].sort((a, b) => {
-    if (field === "year") {
-      return a.year - b.year;
-    }
-    if (field === "title") {
-      return a.title.localeCompare(b.title);
-    }
-    return 0;
-  });
-
-  if (order === "desc") {
-    return sorted.reverse();
-  }
-  return sorted;
-}
-
-export function applyFilters(
+export const sortProjects = (
   projects: Project[],
-  { search, category, sortField, sortOrder }: FilterState
-): Project[] {
-  const searched = filterBySearch(projects, search);
-  const categorized = filterByCategory(searched, category);
-  return sortProjects(categorized, sortField, sortOrder);
-}
+  sortField: SortField,
+  sortOrder: SortOrder
+): Project[] => {
+  return [...projects].sort((a: Project, b: Project) => {
+    const aValue = String(a[sortField]);
+    const bValue = String(b[sortField]);
+    
+    return sortOrder === 'asc' ? aValue.localeCompare(bValue) : bValue.localeCompare(aValue);
+  });
+};
+
+export const applyFilters = (projects: Project[], filterState: FilterState): Project[] => {
+  let result = projects;
+  result = filterBySearch(result, filterState.search);
+  result = filterByCategory(result, filterState.category);
+  result = sortProjects(result, filterState.sortField, filterState.sortOrder);
+  return result;
+};
