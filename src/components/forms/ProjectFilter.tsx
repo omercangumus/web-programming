@@ -6,9 +6,11 @@ import Button from '../ui/Button';
 interface ProjectFilterProps {
   filterState: FilterState;
   onFilterChange: (newState: FilterState) => void;
+  resultCount: number;
+  totalCount: number;
 }
 
-const ProjectFilter: React.FC<ProjectFilterProps> = ({ filterState, onFilterChange }) => {
+const ProjectFilter: React.FC<ProjectFilterProps> = ({ filterState, onFilterChange, resultCount, totalCount }) => {
   const categories: Category[] = ['Tümü', 'Web', 'Mobil', 'AI', 'DevOps', 'Siber Güvenlik'];
 
   const handleChange = (field: keyof FilterState, value: string) => {
@@ -83,6 +85,11 @@ const ProjectFilter: React.FC<ProjectFilterProps> = ({ filterState, onFilterChan
           </Button>
         </div>
       </div>
+
+      {/* Result Count */}
+      <p className="text-sm text-gray-500 mt-4 text-center sm:text-left">
+        {resultCount} / {totalCount} proje gösteriliyor
+      </p>
     </div>
   );
 };

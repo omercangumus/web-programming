@@ -61,7 +61,12 @@ const ProjectList: React.FC = () => {
           </p>
         </div>
 
-        <ProjectFilter filterState={filterState} onFilterChange={setFilterState} />
+        <ProjectFilter 
+          filterState={filterState} 
+          onFilterChange={setFilterState} 
+          resultCount={filteredProjects.length}
+          totalCount={projects.length}
+        />
 
         {error && (
           <div className="mb-8">

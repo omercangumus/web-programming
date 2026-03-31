@@ -55,7 +55,7 @@ const ContactForm: React.FC = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -99,7 +99,7 @@ const ContactForm: React.FC = () => {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-6" noValidate>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Input
             id="name"
@@ -125,16 +125,26 @@ const ContactForm: React.FC = () => {
           />
         </div>
 
-        <Input
-          id="subject"
-          name="subject"
-          label="Konu (Opsiyonel)"
-          placeholder="Mesajınızın konusu"
-          value={formData.subject}
-          onChange={handleChange}
-          error={errors.subject}
-          disabled={isSubmitting}
-        />
+        <div className="w-full">
+          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+            Konu (Opsiyonel)
+          </label>
+          <select
+            id="subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            disabled={isSubmitting}
+            className={`w-full px-4 py-2 rounded-lg border ${errors.subject ? 'border-red-500 focus:ring-red-500' : 'border-gray-300 focus:ring-blue-500'} focus:outline-none focus:ring-2 transition-shadow bg-white`}
+          >
+            <option value="">Konu seçiniz...</option>
+            <option value="genel">Genel</option>
+            <option value="destek">Teknik Destek</option>
+            <option value="oneri">Öneri</option>
+            <option value="isbirligi">İş Birliği</option>
+          </select>
+          {errors.subject && <p className="mt-1 text-sm text-red-500">{errors.subject}</p>}
+        </div>
 
         <div className="w-full">
           <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
